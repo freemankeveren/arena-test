@@ -73,7 +73,7 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="col-sm-6 form-group">
-									<input type="text" class="form-control" id="firs-tname" placeholder="First Name">
+									<input type="text" class="form-control" id="first-name" placeholder="First Name">
 								</div>
 								<div class="col-sm-6 form-group">
 									<input type="text" class="form-control" id="last-name" placeholder="Last Name">

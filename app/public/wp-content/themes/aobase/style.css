@@ -79,7 +79,7 @@ section{
 }
 
 .form-title-text{
-  font-family: Eurostile-Reg;
+  font-family: Eurostile-Bol, sans-serif;
   font-size: 42.7px;
   text-align: center;
   color: #edd53b;
@@ -108,13 +108,13 @@ input{
   background-color: white;
   font-size: 35px;
     color: #144f8e;
-    font-family: Eurostile-Reg;
+    font-family: Eurostile-Bol, sans-serif;
 }
 
 .input.value{
   width: 124px;
   height: 24px;
-  font-family: Eurostile-Reg;
+  font-family: Eurostile-Bol, sans-serif;
   font-size: 35px;
   text-align: center;
   color: #144f8e;
@@ -135,7 +135,6 @@ input{
   padding: 10px;
   font-family: Georgia;
   font-size: 200%;
-  line-height: 0.75;
 }
 
 .explaining-text-two{
@@ -184,7 +183,7 @@ input{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: Eurostile-Reg;
+    font-family: Eurostile-Bol, sans-serif;
     font-size: 35px;
     color: #144f8e;
   }
@@ -193,10 +192,15 @@ input{
   padding: 100px 0;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .saving-text{
+    font-size: 20px;
+  }
+}
+
 .savings-text{
-  width: 100%;
-  font-family: Eurostile-Bol;
-  font-size: 90px;
+  font-family: Eurostile-Bol, sans-serif;
+  font-size: 5.625em;
   text-align: center;
   color: #155496;
   display: inline;
@@ -208,14 +212,14 @@ input{
 }
 
 .features-text{
-  font-family: Eurostile-Bol;
+  font-family: Eurostile-Bol, sans-serif;
   font-size: 51px;
   text-align: center;
   color: #155496;
 }
 
 .check-marks{
-  font-family: Eurostile-Reg;
+  font-family: Eurostile-Bol, sans-serif;
   font-size: 25px;
   text-align: left;
   color: #155496;
@@ -258,21 +262,33 @@ input{
 }
 
 .bottom-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  order: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
   height: 103px;
   background-color: #144f8e;
+  text-align: center;
 }
 
 .bottom{
+  height: 20px;
+  width: 225px;
+  padding: 1px 2px;
   border: solid 1px #ffffff;
 }
 
 .bottom-text{
-  padding: 23px 55px;
   font-family: Helvetica;
-  font-size: 11px;
-  font-weight: 300;
+  font-size: 8px;
   text-align: center;
   color: #ffffff;
+  display: inline;
 
 }
 
@@ -512,7 +528,6 @@ ul {
 
 ul li:before {
   content: '✓';
-  font-family: FontAwesome;
 }
 /*
 GRAVITY FORMS QUICK ACCESS
